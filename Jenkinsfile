@@ -15,7 +15,6 @@ String getBranchList(String repo, String dft ){
 properties([
     //pipelineTriggers([bitbucketPush()]),
     parameters([
-
             choice( name: 'Environment', description: '', choices: ['DEV','BAT'] ),
 
             [$class: 'CascadeChoiceParameter', choiceType: 'PT_SINGLE_SELECT', filterLength: 1, filterable: false,
@@ -37,7 +36,7 @@ pipeline {
                     echo "params======$params"
                     //def z = new com.wavecloud.Zot()
                     //z.checkOutFrom(repo)
-
+                    sh ' echo Hello world'
                     log.info 'Starting'
                     log.warning 'Nothing to do!'
                 }
