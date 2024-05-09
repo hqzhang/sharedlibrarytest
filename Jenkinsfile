@@ -15,6 +15,7 @@ properties([
                script: getBranchList(repo,brch) ]]],
 
 ])])
+
 pipeline {
     agent any
     stages {
@@ -24,9 +25,11 @@ pipeline {
                     echo "STAGE: create List..."
                     myMethods.greet("Alice")
                     echo "params======$params"
-                    echo "components=${env.compNames}"
-                    echo "init=$env.initMenu"
-                    println "get use function"
+                    def z = new com.wavecloud.Zot()
+                    z.checkOutFrom(repo)
+
+                    log.info 'Starting'
+                    log.warning 'Nothing to do!'
                    
     
                 }
