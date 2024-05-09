@@ -7,8 +7,8 @@ def brch='main'
 def request=libraryResource 'com/wavecloud/request.json'
 println request
 
-import com.wavecloud.bar
-bar.sayHello()
+def myUtils = new org.demo.buildUtils()
+myUtils.checkOutFrom(repo)
 
 String getBranchList(String repo, String dft ){
    def ret=[]
