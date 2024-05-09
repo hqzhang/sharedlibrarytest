@@ -6,6 +6,10 @@ def repo=scm.getUserRemoteConfigs().toString()
 def brch='main'
 def request=libraryResource 'com/wavecloud/request.json'
 println request
+
+import com.wavecloud.bar
+bar.sayHello()
+
 String getBranchList(String repo, String dft ){
    def ret=[]
    def out = "git ls-remote --heads ${repo}".execute().text
