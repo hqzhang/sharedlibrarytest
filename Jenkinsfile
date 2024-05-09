@@ -3,7 +3,7 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
    remote: 'https://github.com/hqzhang/sharedlibrarytest.git',
    credentialsId: ''])
 def repo=scm.getUserRemoteConfigs().toString()
-
+def brch='main'
 String getBranchList(String repo, String dft ){
    def ret=[]
    def out = "git ls-remote --heads ${repo}".execute().text
