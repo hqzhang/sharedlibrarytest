@@ -1,4 +1,4 @@
-library identifier: 'custom-lib@master', retriever: modernSCM(
+library identifier: 'custom-lib@main', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'git@github.com:hqzhang/sharedlibrarytest.git',
    credentialsId: 'my-private-key'])
