@@ -1,7 +1,7 @@
 library identifier: 'custom-lib@main', retriever: modernSCM(
   [$class: 'GitSCMSource',
-   remote: 'git@github.com:hqzhang/sharedlibrarytest.git',
-   credentialsId: 'my-private-key'])
+   remote: 'https://github.com/hqzhang/sharedlibrarytest.git',
+   credentialsId: ''])
 
 properties([
     //pipelineTriggers([bitbucketPush()]),
