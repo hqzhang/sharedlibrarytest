@@ -25,8 +25,8 @@ pipeline {
                     echo "STAGE: create List..."
                     myMethods.greet("Alice")
                     echo "params======$params"
-                    def z = new com.wavecloud.Zot()
-                    z.checkOutFrom(repo)
+                    //def z = new com.wavecloud.Zot()
+                    /z.checkOutFrom(repo)
 
                     log.info 'Starting'
                     log.warning 'Nothing to do!'
