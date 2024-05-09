@@ -4,7 +4,7 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
    credentialsId: ''])
 def repo=scm.getUserRemoteConfigs().toString()
 def brch='main'
-def request=libraryResource 'com.wavecoud.request.json'
+def request=libraryResource 'com/wavecoud/request.json'
 println request
 String getBranchList(String repo, String dft ){
    def ret=[]
