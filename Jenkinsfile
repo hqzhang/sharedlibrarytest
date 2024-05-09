@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                     echo "STAGE: create List..."
-                    myMethods.greet("Alice")
+                   
                     echo "params======$params"
                     //def z = new com.wavecloud.Zot()
                     //z.checkOutFrom(repo)
