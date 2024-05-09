@@ -4,6 +4,7 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
    credentialsId: ''])
 def repo=scm.getUserRemoteConfigs().toString()
 def brch='main'
+
 String getBranchList(String repo, String dft ){
    def ret=[]
    def out = "git ls-remote --heads ${repo}".execute().text
@@ -21,7 +22,7 @@ properties([
                name: 'getBranchList', randomName: 'choice-parameter-16677189047440', referencedParameters: 'Environment', 
                script: [$class: 'GroovyScript', fallbackScript: [classpath: [], oldScript: '', sandbox: true, script: ''], 
                script: [classpath: [], oldScript: '', sandbox: true, 
-               script: getBranchList(repo,brch) ]]],
+               script: getBranchList(repo,'main') ]]],
 
 ])])
 
