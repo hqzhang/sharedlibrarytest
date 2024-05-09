@@ -26,7 +26,7 @@ pipeline {
                     myMethods.greet("Alice")
                     echo "params======$params"
                     //def z = new com.wavecloud.Zot()
-                    /z.checkOutFrom(repo)
+                    //z.checkOutFrom(repo)
 
                     log.info 'Starting'
                     log.warning 'Nothing to do!'
@@ -39,4 +39,3 @@ pipeline {
     }
   
 }
-
