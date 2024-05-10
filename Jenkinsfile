@@ -10,9 +10,9 @@ def brch='main'
 def request=libraryResource 'com/wavecloud/request.json'
 println request
 /////////////use var defination//////////////
- log.info 'Starting'
-
-
+log('Starting')
+log.info('Ending')
+sayHello.sayHello()
 
 String getBranchList(String repo, String dft ){
    def ret=[]
