@@ -1,5 +1,5 @@
 
 def sayHello(){
 
-    each "Hello, World!"
+    echo "Hello, World!"
 }
