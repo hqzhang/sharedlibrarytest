@@ -5,14 +5,16 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
    credentialsId: ''])
 def repo=scm.getUserRemoteConfigs().toString()
 def brch='main'
-/////////////use resources defination//////////////
+/////////////use resources definition//////////////
 
 def request=libraryResource 'com/wavecloud/request.json'
 println request
-/////////////use var defination//////////////
+/////////////use var definition//////////////
 log('Starting')
 log.info('Ending')
 sayHello.sayHello()
+/////////////use src definition//////////////
+
 
 String getBranchList(String repo, String dft ){
    def ret=[]
