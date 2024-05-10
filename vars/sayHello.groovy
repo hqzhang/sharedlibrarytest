@@ -1,5 +1,5 @@
 
-def sayHello(){
+call sayHello(){
 
     println "Hello, World!"
 }

@@ -10,7 +10,7 @@ def brch='main'
 def request=libraryResource 'com/wavecloud/request.json'
 println request
 /////////////use var defination//////////////
-sayHello.sayHello()
+sayHello()
 
 
 
