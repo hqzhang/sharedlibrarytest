@@ -12,6 +12,7 @@ println request
 /////////////use var defination//////////////
 sayHello.sayHello()
 
+import org.demo.buildUtils
 def myUtils = new org.demo.buildUtils()
 myUtils.checkOutFrom(repo)
 
