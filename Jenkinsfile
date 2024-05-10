@@ -1,11 +1,16 @@
+/////////////use library defination//////////////
 library identifier: 'custom-lib@main', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'https://github.com/hqzhang/sharedlibrarytest.git',
    credentialsId: ''])
 def repo=scm.getUserRemoteConfigs().toString()
 def brch='main'
+/////////////use resources defination//////////////
+
 def request=libraryResource 'com/wavecloud/request.json'
 println request
+/////////////use var defination//////////////
+sayHello.sayHello()
 
 def myUtils = new org.demo.buildUtils()
 myUtils.checkOutFrom(repo)
