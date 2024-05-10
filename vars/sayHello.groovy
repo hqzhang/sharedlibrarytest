@@ -1,5 +1,5 @@
 
-call sayHello(){
+def sayHello(){
 
-    println "Hello, World!"
+    each "Hello, World!"
 }
