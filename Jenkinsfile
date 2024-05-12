@@ -1,5 +1,5 @@
 /////////////use library defination//////////////
-library identifier: 'custom-lib@main', retriever: modernSCM(
+library identifier: 'custom-lib@master', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'https://github.com/hqzhang/sharedlibrarytest.git',
    credentialsId: ''])
